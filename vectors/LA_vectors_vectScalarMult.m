@@ -15,9 +15,9 @@ l  = -.3;
 figure(1), clf
 
 % the main plotting lines:
-plot([0 v1(1)],[0 v1(2)],'b','linew',2)
+plot([0 v1(1)],[0 v1(2)],'b','linew',2) %plot 0,0 to v1(1) = 3,v1(2) = -1
 hold on
-plot([0 v1(1)]*l,[0 v1(2)]*l,'r:','linew',4)
+plot([0 v1(1)]*l,[0 v1(2)]*l,'r:','linew',4) %Plots 0 * -0.3 = 0, 0 * -0.3 = 0 to v1(1) * -0.3 = -0.9 , v1(2) * -0.3 = 0.3
 legend({'v1';'v2'},'AutoUpdate','off')
 
 % this code just makes the plot look nicer
