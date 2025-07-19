@@ -17,6 +17,7 @@ c = randn(n,1);
 
 % the two results
 res1 = a' * (b+c);
+tmp = b+c
 res2 = a'*b + a'*c;
 
 % compare them
@@ -28,7 +29,13 @@ disp([ res1 res2 ])
 n = 10;
 a = randn(n,1);
 b = randn(n,1);
+
 c = randn(n,1);
+
+% Below: only if a=b=c or one of the vectors is all zeros, than the Assiciative property holds
+% b = a
+% c = a
+%c = [0; 0; 0; 0; 0; 0; 0; 0; 0; 0;]
 
 % compute results
 res1 = a' * (b'*c);
